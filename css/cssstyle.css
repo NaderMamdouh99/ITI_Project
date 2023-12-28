@@ -1,0 +1,82 @@
+#mount{
+
+ font-size: large;
+    
+   margin-top: 30px;
+   margin-left: 15px;
+  
+}
+#plus
+{
+    font-size: x-large;
+  
+    margin-top: 40px;
+    margin-left: 60px;
+   
+}
+
+#minus{
+    font-size: x-large;
+    margin-top: 40px;
+    margin-left: 20px;
+   
+
+}
+
+/*          */
+#heart{
+    margin-top: 20px;
+    padding-right: 20px;
+   float:right;
+   color: black;
+   
+}
+#str{
+
+    float:right;
+    border-radius: 9px;
+    text-align: center;
+    width: 50px;
+}
+#star:hover{
+    color: yellow;
+
+}
+#heart:hover{
+    color:red;
+
+
+}
+.card{
+margin: 10px;
+transition: 1s;
+}
+.card:hover{
+    transform: scale(1.06);
+
+}
+
+#exp{
+
+border-radius: 9px;
+text-align: center;
+width:70px ;
+display:inline-block;
+ 
+}
+
+.addproducts{
+    display: inline-block;
+    margin-left: 90px;
+}
+.par{
+    overflow: hidden;
+    text-overflow: ellipsis;  
+}
+#cardimg{
+    padding-left: 15px;
+}
+#ex{
+    text-align: center;
+    border-radius: 9px;
+}

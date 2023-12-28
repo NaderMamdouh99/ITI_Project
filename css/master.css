@@ -1,0 +1,130 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  position: relative;
+  min-height: 100vh;
+  /* background-color: rgb(235, 223, 223); */
+  height: 1000px;
+
+}
+
+header {
+  background-color: rgb(230, 230, 60);
+}
+
+
+.ordersAddedToCart {
+  margin-top: 5px;
+  background-color: red;
+  border-radius: 50%;
+  height: 20px;
+  width: 15px;
+  padding-left: 2px;
+  padding-top: 0;
+}
+
+/* begin::nav bar bootsrap */
+/* @media only screen and (min-width: 768px) {
+  .dropdown:hover .dropdown-menu {
+    display: block;
+
+  }
+} */
+
+
+ 
+
+
+
+/* start: nav bar  */
+
+/* Navbar container */
+.navbar {
+  background-color: #aac743;
+  font-family: Arial;
+  width: 100%;
+}
+
+/* The dropdown container */
+.dropdown-nav {
+  float: left;
+  /* overflow: hidden;   */
+}
+
+/* Dropdown button */
+.dropdown-nav .dropbtn {
+  min-width: 200px;
+  font-size: 16px;
+  border: none;
+  outline: none;
+  color: rgb(21, 17, 17);
+  padding: 14px 16px;
+  background-color: inherit;
+  font-family: inherit;
+  /* Important for vertical align on mobile phones */
+  margin: 0;
+  
+}
+
+/* Add a red background color to navbar links on hover */
+.navbar a:hover,
+.dropdown-nav:hover .dropbtn {
+  background-color: rgb(98, 115, 228);
+}
+
+/* Dropdown content (hidden by default) */
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: #f9f9f9;
+  min-width: 200px;
+  box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+  z-index: 10;
+  /* margin-top: 5px; */
+}
+
+/* Links inside the dropdown */
+.dropdown-content a {
+  float: none;
+  color: black;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+  text-align: left;
+}
+
+/* Add a grey background color to dropdown links on hover */
+.dropdown-content a:hover {
+  background-color: #ddd;
+}
+
+/* Show the dropdown menu on hover */
+.dropdown-nav:hover .dropdown-content {
+  display: block;
+}
+
+/* end: nav bar  */
+
+
+/* nader */
+
+#pricenum {
+  width: 20%;
+  padding: 2px 20px;
+  margin: 8px 0;
+  box-sizing: border-box;
+  border-radius: 4px;
+  border: none;
+  background-color: #ffc107;
+  font-size: 16px;
+  font-family: Arial;
+  font-weight: bold;
+}
+#pricenum:hover {
+  background-color: #ffc107;
+  cursor: pointer;
+  transform: scale(1.04);
+}

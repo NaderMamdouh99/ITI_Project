@@ -1,0 +1,362 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>CartOrders</title>
+
+    <!-- bootstrap library  -->
+    <link rel="stylesheet" href="../css/bootstrap.min.css" />
+    <!-- poper library  -->
+    <link rel="stylesheet" href="../css/all.min.css" />
+    <!-- custom style css file -->
+    <link rel="stylesheet" href="../style.css" />
+    <!-- custom  master css file -->
+    <link rel="stylesheet" href="../css/master.css" />
+  </head>
+  <body style="background-image: url(../images/background.jpg)">
+    <!-- begin:header tag -->
+    <header class="">
+      <!-- begin:header -->
+      <div class="header d-flex">
+        <!-- begin:svg logo -->
+        <div class="svg col">
+          <!-- begin:link to home noun  -->
+          <a href="../index.html">
+            <svg
+              width="100"
+              height="50"
+              viewBox="0 0 173 48"
+              fill="none"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <path
+                d="M161.706 9.67833C158.639 9.67833 155.855 10.676 153.72 12.5128L153.105 10.3357H147.692V37.7063H154.573V22.8345C154.573 19.669 156.695 16.4615 160.746 16.4615C163.916 16.4615 165.804 18.6946 165.804 22.4289V37.711H172.685V21.9254C172.685 14.4849 168.378 9.67833 161.706 9.67833ZM106.709 24C106.709 28.3683 103.86 31.5385 99.9301 31.5385C96 31.5385 93.1515 28.3683 93.1515 24C93.1515 19.6317 96 16.4615 99.9301 16.4615C103.855 16.4615 106.709 19.6317 106.709 24ZM99.9254 9.67833C92.2098 9.67833 86.1632 15.9674 86.1632 23.9953C86.1632 32.0233 92.2051 38.317 99.9254 38.317C107.641 38.317 113.688 32.028 113.688 23.9953C113.688 15.9674 107.646 9.67833 99.9254 9.67833ZM136.779 24C136.779 28.3683 133.925 31.5385 130 31.5385C126.075 31.5385 123.221 28.3683 123.221 24C123.221 19.6317 126.075 16.4615 130 16.4615C133.93 16.4615 136.779 19.6317 136.779 24ZM130 9.67833C122.284 9.67833 116.238 15.9674 116.238 23.9953C116.238 32.0233 122.28 38.317 130 38.317C137.716 38.317 143.762 32.028 143.762 23.9953C143.762 15.9674 137.72 9.67833 130 9.67833ZM71.2587 9.67833C68.1958 9.67833 65.4079 10.676 63.2681 12.5128L62.6527 10.3357H57.2448V37.7063H64.1259V22.8345C64.1259 19.669 66.2471 16.4615 70.2984 16.4615C73.4685 16.4615 75.3566 18.6946 75.3566 22.4289V37.711H82.2377V21.9254C82.2377 14.4849 77.9301 9.67833 71.2587 9.67833Z"
+                fill="#404553"
+              />
+              <path
+                d="M0 25.1375C0 38.0047 10.9371 48 23.6503 48C36.9604 48 47.7482 37.2634 47.7482 24.1492C47.7482 16.4802 44.0373 9.74825 38.5455 5.24942L34.5361 12.1772C37.8508 14.9977 40.1259 19.352 40.1259 24.2517C40.1259 33.1562 32.7552 40.4802 23.6503 40.4802C14.5967 40.4802 7.22144 33.1562 7.22144 24.0047C7.22144 22.9138 7.31935 21.8275 7.51981 20.7879L0 25.1375ZM31.0723 1.18881C28.7972 0.344988 26.7692 0 24.7413 0C23.2075 0 21.8695 0.195804 20.8811 0.39627L15.7343 9.3007C17.6131 8.21445 20.0373 7.61772 22.662 7.61772C24.1958 7.61772 25.5804 7.81352 27.0163 8.20979L31.0723 1.18881Z"
+                fill="#404553"
+              />
+            </svg>
+          </a>
+          <!-- end:link to home noun -->
+        </div>
+        <!-- end:svg logo -->
+
+        <!-- begin: search -->
+        <div class="col-7 my-auto">
+          <form class="d-flex" role="search">
+            <input
+              class="form-control me-2"
+              type="search"
+              placeholder="Search"
+              aria-label="Search"
+            />
+            <button
+              class="btn btn-outline-success bg-primary font-weight-bold"
+              type="submit"
+            >
+              Search
+            </button>
+          </form>
+        </div>
+        <!-- end: search -->
+
+        <!-- begin:my account -->
+        <div class="col my-auto">
+          <a
+            id="loginLink"
+            href="../LoginForm.html"
+            class="btn btn-secondary col"
+            >Login
+            <i class="fa-regular fa-user"></i>
+          </a>
+          <!-- <button type="button" class="btn btn-secondary co  l mx-auto"></button> -->
+          <div hidden id="myAccountButton" class="dropdown">
+            <span
+              id="userNameShow"
+              style="background-color: gray; padding: 5px"
+            ></span>
+            <button
+              class="btn btn-warning btn-ms dropdown-toggle"
+              id="list"
+              type="button"
+              data-toggle="dropdown"
+              aria-expanded="false"
+            >
+              My Account
+            </button>
+            <ul class="dropdown-menu" aria-labelledby="list">
+              <li>
+                <a class="dropdown-item" href="../AddedCartOrders.html"
+                  >Orders</a
+                >
+              </li>
+              <li><a class="dropdown-item" href="#">Addresses</a></li>
+              <li>
+                <a class="dropdown-item" href="../UserProfile.html">Profile</a>
+              </li>
+              <li>
+                <a id="signOutLink" class="dropdown-item" href="../index.html"
+                  >Sign OUt</a
+                >
+              </li>
+            </ul>
+          </div>
+        </div>
+        <!-- end:my account -->
+
+        <!-- begin: shopping card -->
+        <div class="col">
+          <!-- begin:svg -->
+          <div class="d-flex justify-content-center">
+            <a href="#" class="link-underline link-underline-opacity-0 d-flex">
+              <!-- cart title -->
+              <p class="my-auto font-weight-bold">Cart</p>
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                width="40"
+                height="40"
+                fill="currentColor"
+                class="bi bi-cart3"
+                viewBox="0 0 16 16"
+              >
+                <path
+                  d="M0 1.5A.5.5 0 0 1 .5 1H2a.5.5 0 0 1 .485.379L2.89 3H14.5a.5.5 0 0 1 .49.598l-1 5a.5.5 0 0 1-.465.401l-9.397.472L4.415 11H13a.5.5 0 0 1 0 1H4a.5.5 0 0 1-.491-.408L2.01 3.607 1.61 2H.5a.5.5 0 0 1-.5-.5zM3.102 4l.84 4.479 9.144-.459L13.89 4H3.102zM5 12a2 2 0 1 0 0 4 2 2 0 0 0 0-4zm7 0a2 2 0 1 0 0 4 2 2 0 0 0 0-4zm-7 1a1 1 0 1 1 0 2 1 1 0 0 1 0-2zm7 0a1 1 0 1 1 0 2 1 1 0 0 1 0-2z"
+                />
+              </svg>
+            </a>
+            <span id="ordersAddedToCart"></span>
+          </div>
+          <!-- end:svg -->
+        </div>
+        <!-- end: shopping card -->
+      </div>
+      <!-- end:header -->
+
+      <!-- begin:nav bar -->
+      <nav class="navbar navbar-expand-lg navbar-light bg-light">
+        <!-- <a class="navbar-brand" href="#">Navbar</a> -->
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-toggle="collapse"
+          data-target="#navbarSupportedContent"
+          aria-controls="navbarSupportedContent"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <ul class="navbar-nav mr-auto">
+            <!-- first list -->
+            <li class="nav-item dropdown show-list">
+              <a
+                class="nav-link dropdown-toggle"
+                href="#"
+                id="navbarDropdown"
+                role="button"
+                data-toggle="dropdown"
+                aria-haspopup="true"
+                aria-expanded="false"
+              >
+                electronic
+              </a>
+              <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                <a class="dropdown-item" href="#">Laptops</a>
+                <a class="dropdown-item" href="#">Samsung</a>
+                <a class="dropdown-item" href="#">Computers</a>
+              </div>
+            </li>
+            <!-- second list -->
+            <li class="nav-item dropdown show-list">
+              <a
+                class="nav-link dropdown-toggle"
+                href="#"
+                id="navbarDropdown"
+                role="button"
+                data-toggle="dropdown"
+                aria-haspopup="true"
+                aria-expanded="false"
+              >
+                mobiles
+              </a>
+              <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                <a class="dropdown-item" href="#">Mobiles</a>
+                <a class="dropdown-item" href="#">Tablets</a>
+                <a class="dropdown-item" href="#">Powerbank</a>
+              </div>
+            </li>
+            <!-- third list -->
+            <li class="nav-item dropdown show-list">
+              <a
+                class="nav-link dropdown-toggle"
+                href="#"
+                id="navbarDropdown"
+                role="button"
+                data-toggle="dropdown"
+                aria-haspopup="true"
+                aria-expanded="false"
+              >
+                supermark
+              </a>
+              <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                <a class="dropdown-item" href="#">Persil</a>
+                <a class="dropdown-item" href="#">Oxi</a>
+              </div>
+            </li>
+          </ul>
+        </div>
+      </nav>
+      <!-- end:nav bar -->
+    </header>
+    <!-- end:header tag -->
+
+    <!-- begin:: main -->
+    <main>
+      <h1>CartOrders</h1>
+
+      <!-- write main code her  -->
+    </main>
+    <!-- end:: main -->
+
+    <!-- begin:: footer  -->
+    <!-- Remove the container if you want to extend the Footer to full width. -->
+    <div class="container my-2">
+      <!--begin:: Footer -->
+      <footer
+        class="text-center text-lg-start text-dark"
+        style="background-color: #eceff1"
+      >
+        <!-- Section: Social media -->
+        <section
+          class="d-flex justify-content-between p-4 text-white"
+          style="background-color: hwb(43 47% 47%)"
+        >
+          <!-- Left -->
+          <div class="me-5">
+            <span>Get connected with us on social networks:</span>
+          </div>
+          <!-- Left -->
+
+          <!-- Right -->
+          <div class="d-flex justify-content-between w-25">
+            <a href="https://www.facebook.com/noon.eg" class="text-white me-4">
+              <i class="fab fa-facebook-f"></i>
+            </a>
+
+            <a href="https://twitter.com/noon?lang=ar" class="text-white me-4">
+              <i class="fab fa-twitter"></i>
+            </a>
+
+            <a href="" class="text-white me-4">
+              <i class="fab fa-instagram"></i>
+            </a>
+            <a href="" class="text-white me-4">
+              <i class="fab fa-linkedin"></i>
+            </a>
+          </div>
+          <!-- Right -->
+        </section>
+        <!-- Section: Social media -->
+
+        <!-- Section: Links  -->
+        <section class="">
+          <div class="container text-center text-md-start mt-5">
+            <!-- Grid row -->
+            <div class="row mt-3">
+              <!-- Grid column -->
+              <div class="col-md-2 col-lg-2 col-xl-2 mx-auto mb-4">
+                <!-- Links -->
+                <h6 class="text-uppercase fw-bold">electronics</h6>
+                <hr
+                  class="mb-4 mt-0 d-inline-block mx-auto"
+                  style="width: 60px; background-color: #7c4dff; height: 2px"
+                />
+                <p>
+                  <a href="#!" class="text-dark">mobiles</a>
+                </p>
+                <p>
+                  <a href="#!" class="text-dark">screens</a>
+                </p>
+                <p>
+                  <a href="#!" class="text-dark">labtops</a>
+                </p>
+              </div>
+              <!-- Grid column -->
+
+              <!-- Grid column -->
+              <div class="col-md-3 col-lg-2 col-xl-2 mx-auto mb-4">
+                <!-- Links -->
+                <h6 class="text-uppercase fw-bold">supermark</h6>
+                <hr
+                  class="mb-4 mt-0 d-inline-block mx-auto"
+                  style="width: 60px; background-color: #7c4dff; height: 2px"
+                />
+                <p>
+                  <a href="#!" class="text-dark">oil</a>
+                </p>
+                <p>
+                  <a href="#!" class="text-dark">sugur</a>
+                </p>
+                <p>
+                  <a href="#!" class="text-dark">milk</a>
+                </p>
+              </div>
+              <!-- Grid column -->
+
+              <!-- Grid column -->
+              <div class="col-md-3 col-lg-2 col-xl-2 mx-auto mb-4">
+                <!-- Links -->
+                <h6 class="text-uppercase fw-bold">clothing</h6>
+                <hr
+                  class="mb-4 mt-0 d-inline-block mx-auto"
+                  style="width: 60px; background-color: #7c4dff; height: 2px"
+                />
+                <p>
+                  <a href="#!" class="text-dark">men's clothing</a>
+                </p>
+                <p>
+                  <a href="#!" class="text-dark">women's clothing</a>
+                </p>
+                <p>
+                  <a href="#!" class="text-dark">childern clothing</a>
+                </p>
+              </div>
+              <!-- Grid column -->
+            </div>
+            <!-- Grid row -->
+          </div>
+        </section>
+        <!-- Section: Links  -->
+
+        <!-- Copyright -->
+        <div
+          class="text-center p-3"
+          style="background-color: rgba(0, 0, 0, 0.2)"
+        >
+          © 2023 Copyright:
+          <a class="text-dark" href="https://www.noon.com/egypt-en/"
+            >Noon.com</a
+          >
+        </div>
+        <!-- Copyright -->
+      </footer>
+      <!-- Footer -->
+    </div>
+    <!-- End of .container -->
+
+    <!-- begin:: Javascript libraries  -->
+    <script src="../js/popper_js_1.11.0.min.js"></script>
+    <script src="../js/jquery-3.7.0.min.js"></script>
+    <script src="../js/bootstrap.min.js"></script>
+    <!-- <script src="script.js"></script> -->
+    <!-- <script src="main.js"></script> -->
+    <script src="../js/LogingForm.js"></script>
+    <script src="../js/HeaderPart.js"></script>
+    <!-- end:: Javascript  libraries -->
+  </body>
+</html>

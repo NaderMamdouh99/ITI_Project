@@ -1,0 +1,83 @@
+/* Nav */
+.navbar {
+  width: 100%;
+  background-color: #555;
+  overflow: auto;
+}
+
+.navbar a {
+  float: left;
+  text-align: center;
+  padding: 12px;
+  color: white;
+  text-decoration: none;
+  font-size: 17px;
+}
+
+.navbar a:hover {
+  background-color: #000;
+}
+
+.active {
+  background-color: #04aa6d;
+}
+
+@media screen and (max-width: 500px) {
+  .navbar a {
+    float: none;
+    display: block;
+  }
+}
+
+ul {
+  list-style-type: none;
+  display: inline-block;
+}
+
+/* Font */
+h3 {
+  font-family: "Borel", cursive;
+}
+
+/* Contact */
+.contact-chip {
+  display: flex;
+  align-items: center;
+  background-color: #f1f1f1;
+  border-radius: 20px;
+  padding: 10px;
+  margin: 10px;
+  position: relative;
+}
+
+.contact-chip img {
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  margin-right: 10px;
+}
+
+.contact-chip h3 {
+  margin: 0;
+  font-size: 20px;
+  color: #181717;
+}
+
+.contact-chip p {
+  margin: 0;
+  font-size: 16px;
+  color: #181717;
+}
+
+.close-btn {
+  position: absolute;
+  top: 8px;
+  right: 75%;
+  border: none;
+  background-color: dimgray;
+  font-size: 20px;
+  color: #181717;
+  cursor: pointer;
+  outline: none;
+  border-radius: 5px;
+}

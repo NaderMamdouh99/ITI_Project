@@ -1,0 +1,304 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  
+    <link rel="stylesheet" href="/css/bootstrap.css" />
+    <link rel="stylesheet" href="/css/elzero.css" />
+  </head>
+  <body>
+    
+    <!-- <div class="container">
+      <div class="row">
+        <div class="col text-center my-4">
+          <h1 class="fs-2">Trending Item</h1>
+          <div class="underline"></div>
+        </div>
+      </div>
+
+      <div class="row mt-3 mb-4 button-group filter-button-group">
+        <div class="col d-flex justify-content-center">
+          <button
+            type="button"
+            data-filter="*"
+            class="btn btn-primary mx-1 text-dark"
+          >
+            All
+          </button>
+          <button
+            type="button"
+            data-filter=".electronic"
+            class="btn btn-primary mx-1 text-dark"
+          >
+            Electronic
+          </button>
+          <button
+            type="button"
+            data-filter=".clothing"
+            class="btn btn-primary mx-1 text-dark"
+          >
+            Clothing
+          </button>
+          <button
+            type="button"
+            data-filter=".furniture"
+            class="btn btn-primary mx-1 text-dark"
+          >
+            Furniture
+          </button>
+        </div>
+      </div>
+
+      <div class="row justify-content-center g-4" id="product-list">
+        <div class="col-lg-4 col-md-6 electronic">
+          <div class="product-item">
+            <div class="product-img">
+              <img
+                src="images/product_img_1.jpg"
+                class="img-fluid d-block mx-auto"
+              />
+            </div>
+            <div class="product-content text-center py-3">
+              <h3 class="d-block text-uppercase fw-bold">product name</h3>
+              <p class="d-block">$ 100.00</p>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-lg-4 col-md-6 electronic">
+          <div class="product-item">
+            <div class="product-img">
+              <img
+                src="images/product_img_2.jpg"
+                class="img-fluid d-block mx-auto"
+              />
+            </div>
+            <div class="product-content text-center py-3">
+              <h3 class="d-block text-uppercase fw-bold">product name</h3>
+              <p class="d-block">$ 80.00</p>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-lg-4 col-md-6 clothing">
+          <div class="product-item">
+            <div class="product-img">
+              <img
+                src="images/product_img_3.jpg"
+                class="img-fluid d-block mx-auto"
+              />
+            </div>
+            <div class="product-content text-center py-3">
+              <h3 class="d-block text-uppercase fw-bold">product name</h3>
+              <p class="d-block">$ 95.00</p>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-lg-4 col-md-6 clothing">
+          <div class="product-item">
+            <div class="product-img">
+              <img
+                src="images/product_img_4.jpg"
+                class="img-fluid d-block mx-auto"
+              />
+            </div>
+            <div class="product-content text-center py-3">
+              <h3 class="d-block text-uppercase fw-bold">product name</h3>
+              <p class="d-block">$ 200.00</p>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-lg-4 col-md-6 electronic">
+          <div class="product-item">
+            <div class="product-img">
+              <img
+                src="images/product_img_5.jpg"
+                class="img-fluid d-block mx-auto"
+              />
+            </div>
+            <div class="product-content text-center py-3">
+              <h3 class="d-block text-uppercase fw-bold">product name</h3>
+              <p class="d-block">$ 100.00</p>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-lg-4 col-md-6 furniture">
+          <div class="product-item">
+            <div class="product-img">
+              <img
+                src="images/product_img_6.jpg"
+                class="img-fluid d-block mx-auto"
+              />
+            </div>
+            <div class="product-content text-center py-3">
+              <h3 class="d-block text-uppercase fw-bold">product name</h3>
+              <p class="d-block">$ 90.00</p>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-lg-4 col-md-6 electronic">
+          <div class="product-item">
+            <div class="product-img">
+              <img
+                src="images/product_img_7.jpg"
+                class="img-fluid d-block mx-auto"
+              />
+            </div>
+            <div class="product-content text-center py-3">
+              <h3 class="d-block text-uppercase fw-bold">product name</h3>
+              <p class="d-block">$ 90.00</p>
+            </div>
+          </div>
+        </div>
+        <div class="col-lg-4 col-md-6 electronic">
+          <div class="product-item">
+            <div class="product-img">
+              <img
+                src="images/product_img_7.jpg"
+                class="img-fluid d-block mx-auto"
+              />
+            </div>
+            <div class="product-content text-center py-3">
+              <h3 class="d-block text-uppercase fw-bold">product name</h3>
+              <p class="d-block">$ 90.00</p>
+            </div>
+          </div>
+        </div>
+        <div class="col-lg-4 col-md-6 electronic">
+          <div class="product-item">
+            <div class="product-img">
+              <img
+                src="images/product_img_7.jpg"
+                class="img-fluid d-block mx-auto"
+              />
+            </div>
+            <div class="product-content text-center py-3">
+              <h3 class="d-block text-uppercase fw-bold">product name</h3>
+              <p class="d-block">$ 90.00</p>
+            </div>
+          </div>
+        </div>
+        <div class="col-lg-4 col-md-6 electronic">
+          <div class="product-item">
+            <div class="product-img">
+              <img
+                src="images/product_img_7.jpg"
+                class="img-fluid d-block mx-auto"
+              />
+            </div>
+            <div class="product-content text-center py-3">
+              <h3 class="d-block text-uppercase fw-bold">product name</h3>
+              <p class="d-block">$ 90.00</p>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-lg-4 col-md-6 clothing">
+          <div class="product-item">
+            <div class="product-img">
+              <img
+                src="images/product_img_8.jpg"
+                class="img-fluid d-block mx-auto"
+              />
+            </div>
+            <div class="product-content text-center py-3">
+              <h3 class="d-block text-uppercase fw-bold">product name</h3>
+              <p class="d-block">$ 90.00</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div> -->
+
+    <!-- <div class="container">
+        <div class="row">
+          <div class="col text-center my-4">
+            <h1 class="fs-2">Trending Item</h1>
+            <div class="underline"></div>
+          </div>
+        </div> -->
+    <ul class="nav switcher">
+      <li class="active" data-cat=".all">All Work</li>
+      <li data-cat=".web">clothes</li>
+      <li data-cat=".gfx">Graphic</li>
+      <li data-cat=".marketnig">Marketnig</li>
+    </ul>
+
+    <section class="gallery">
+      <div class="all web">
+        <img src="/images/product_img_1.jpg" alt="" />
+        <h3>Watch</h3>
+        <p>Price :$50</p>
+      </div>
+
+      <div class="all gfx"><img src="/images/product_img_2.jpg" alt="" />
+        <h3>Camera</h3>
+        <p>Price :$500</p>
+      </div>
+      <div class="all web"><img src="/images/product_img_3.jpg" alt="" />
+      <h3>Scarf</h3>
+      <p>Price :$10</p>
+      </div>
+      <div class="all web"><img src="/images/product_img_4.jpg" alt="" />
+        <h3>T-shirt</h3>
+        <p>Price :$30</p>
+      </div>
+      <div class="all gfx"><img src="/images/product_img_5.jpg" alt="" />
+        <h3>Perfume device</h3>
+        <p>Price :$25</p>
+      </div>
+      <div class="all marketnig"><img src="/images/product_img_6.jpg" alt="" />
+        <h3>chair</h3>
+        <p>Price :$150</p>
+      </div>
+      <div class="all gfx"><img src="/images/product_img_7.jpg" alt="" />
+        <h3>headphone</h3>
+        <p>Price :$60</p>
+      </div>
+      <div class="all web"><img src="/images/product_img_8.jpg" alt="" />
+        <h3>Scarf</h3>
+        <p>Price :$10</p>
+      </div>
+    </sections>
+    <!-- <ul class="nav switcher">
+      <li class="active" data-cat=".all">All Work</li>
+      <li data-cat=".web">clothes</li>
+      <li data-cat=".gfx">Graphic</li>
+      <li data-cat=".marketnig">Marketnig</li>
+    </ul>
+    <div class="gallery">
+      <img class="all web" src="/images/product_img_1.jpg" alt="" />
+      <img class="all gfx" src="/images/product_img_2.jpg" alt="" />
+      <img class="all web" src="/images/product_img_3.jpg" alt="" />
+      <img class="all web" src="/images/product_img_4.jpg" alt="" />
+      <img class="all gfx" src="/images/product_img_5.jpg" alt="" />
+      <img class="all marketnig" src="/images/product_img_6.jpg" alt="" />
+      <img class="all gfx" src="/images/product_img_7.jpg" alt="" />
+      <img class="all web" src="/images/product_img_8.jpg" alt="" />
+    </div> -->
+  </body>
+  <script src="/js/cdnjs.cloudflare.com_ajax_libs_popper.js_1.11.0_umd_popper.min.js"></script>
+  <script src="/js/code.jquery.com_jquery-3.7.0.min.js"></script>
+  <script src="/js/bootstrap.js"></script>
+  <script src="/js/elzero.js"></script>
+
+
+    <!-- <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"
+      integrity="sha512-894YE6QWD5I59HgZOGReFYm4dnWc1Qt5NtvYSaNcOP+u1T9qYdvdihz0PPSiiqn/+/3e7Jo4EaG7TubfWGUrMQ=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    ></script> -->
+    <!-- <script src="https://unpkg.com/isotope-layout@3/dist/isotope.pkgd.js"></script> -->
+    <!-- isotope plugin -->
+    <!-- <script src="https://unpkg.com/isotope-layout@3/dist/isotope.pkgd.js"></script>
+    <script src="/product-filter-boostrap5-and-isotope-plugin-master/elzero/elzero.js"></script>
+    <script src="/script.js"></script> -->
+  </body>
+</html>
